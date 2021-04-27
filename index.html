@@ -777,74 +777,7 @@
 
                             <hr class="my-8" />
 
-                            <div class="contact-form">
-                                <form class="mb-0" id="cf" name="cf" action="./include/sendemail.php" method="post"
-                                    autocomplete="off" onsubmit="return validerForm();">
-                                    <div class="form-row">
-
-                                        <div class="form-process"></div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" id="cf-name" name="cf-name"
-                                                    placeholder="Entrez votre nom" class="form-control required">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="email" id="cf-email" name="cf-email"
-                                                    placeholder="Entrez votre addresse mail"
-                                                    class="form-control required">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="text" id="cf-subject" name="cf-subject"
-                                                    placeholder="Objet (optionnel)" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mb-4">
-                                            <div class="form-group">
-                                                <textarea name="cf-message" id="cf-message" placeholder="Message"
-                                                    class="form-control required" rows="7"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 d-none">
-                                            <input type="text" id="cf-botcheck" name="cf-botcheck" value=""
-                                                class="form-control" />
-                                        </div>
-
-                                        <div class="col-12 text-center">
-                                            <button class="btn btn-primary" type="submit" id="cf-submit"
-                                                name="cf-submit">Envoyer</button>
-                                        </div>
-
-                                        <input type="hidden" name="prefix" value="cf-">
-
-                                    </div>
-                                </form>
-                                <script>
-                                    function validerForm() {
-                                        var mail = $("#cf-email").value
-                                        if ($("#cf-message").value != "" && $("#cf-email").value != "") {
-                                            window.scrollTo(0, 0);
-                                            alert('Votre message à été bien envoyé');
-                                            return true;
-                                        } else {
-                                            alert('Veuillez saisir les champs obligatoir.');
-                                            return false;
-                                        }
-                                    }
-
-
-
-                                </script>
-                                <div class="contact-form-result text-center"></div>
-                            </div>
+                            
                         </div>
                     </section>
 
