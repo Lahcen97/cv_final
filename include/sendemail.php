@@ -41,7 +41,7 @@ $mail->SMTPSecure = 'ssl'; // Gmail REQUIERT Le transfert securise
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465;
 $mail->Username = 'ryoken.esport2021@gmail.com';
-$mail->Password = md5($key);
+$mail->Password = $key;
 $mail->SetFrom('ryoken.esport2021@gmail.com', 'Ryoken');
 $mail->Subject = $senderSubject;
 $mail->Body = $senderMessage;
