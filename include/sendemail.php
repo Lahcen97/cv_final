@@ -21,7 +21,7 @@ $senderMail=$_POST["cf-email"];
 $senderName=$_POST["cf-name"];
 $senderSubject=$_POST["cf-name"];
 $senderMessage=$_POST["cf-message"];
-$key="c86e0d7c45ca4b0ae07055e4687f4dc0";
+$key="RYokenryoken123";
 // Set the sender email address here
 $sender = array(
 	'email' => $senderMail,
